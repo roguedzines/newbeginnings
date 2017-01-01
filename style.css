@@ -1,0 +1,596 @@
+/******************************************************************
+Theme Name: New Beginnings
+Theme URI: http://www.roguedzines.com
+Description:Portfolio Template
+Author: Lee
+Author URI: http://www.roguedzines.com
+Version: 1.0
+Tags: html5, css3, development, responsive, media queries, mobile, masonry
+
+License: WTFPL
+License URI: http://sam.zoy.org/wtfpl/
+
+/* Global */
+
+*{margin:0; padding:0;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 100%;
+	margin:0;
+	padding:0;
+	color: #8a8683;
+	background-color:#ffffff;
+}
+img {
+	max-width: 100%;
+}
+a:link {
+	color: #f68f67;
+	text-decoration: none;
+}
+a:hover {
+	color: #bde2df;
+	text-decoration: none;
+}
+a:visited {
+	color: #f68f67;
+	text-decoration: none;
+}
+
+#blog-container{
+	padding-top: 200px;
+	clear: both;
+	position: relative;
+	top: 100px;
+}
+
+#content{
+	float: left;
+
+}
+
+#sidebar{
+
+	float: right;
+}
+p{
+	padding: 0 0 1.3em;
+}
+/* Navigation */
+.logo-container{
+	background:#fff url('images/headerbg.jpg') repeat-x top left;
+}
+.menu {
+position:fixed;
+margin:auto;
+
+height:auto;
+top:0;
+width:100%;
+z-index:100;
+box-shadow: 1px 0px 10px rgba(0,0,0,.2);
+}
+
+#logo {
+	text-align: center;
+	margin: 10px 0;
+}
+.nav-menu-container{
+	padding:25px 0;
+background: #376b8b;
+}
+#nav {
+	text-align: right;
+	margin:  0;
+
+}
+.navigation{
+  float: none;
+	list-style: none;
+	margin: 0 auto;
+	text-align: center;
+
+
+}
+
+.navigation li{
+	  display: inline-block;
+	padding:0 0 0 50px;
+}
+
+.navigation li a{
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 600;
+	text-shadow:1px 1px 1px rgba(0,0,0,.1);
+}
+.navigation li:hover{
+	cursor:pointer;
+	color: #efefef;
+}
+
+.navigation .active, .navigation .active-nav{
+	cursor:pointer;
+	font-weight: 600;
+	color:#173141;
+	text-shadow:1px 1px 1px rgba(255,255,255,.1);
+}
+
+
+
+/* General Slides */
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	height:auto;
+	position: relative;
+	top: 130px;
+	padding:130px 0;
+}
+
+
+
+/* Slide 1 */
+
+#aboutme{
+	background:#ffffff url('images/brillant.png') repeat;
+}
+#aboutme h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+
+	color:#8a8683;
+	font-weight: 700;
+}
+#aboutme h2 {
+	font-size: 2em;
+	color: #8a8683;
+
+	font-weight: 400;
+}
+
+
+
+/* Slide 2 */
+
+#mywork{
+	background:#333 url('images/workbg.png') repeat;
+	color:#ffffff;
+}
+#mywork h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+
+	color:#ffffff;
+	font-weight: 700;
+}
+#mywork h2 {
+	font-size: 2em;
+	color: #ffffff;
+
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+ h1{text-align: center;}
+
+
+/* Slide 3 */
+
+#resume{
+	background-color:#ffffff;
+}
+#resume h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+
+	color:#8a8683;
+	font-weight: 700;
+}
+#resume h2 {
+	font-size: 2em;
+	color: #8a8683;
+
+	padding-bottom:20px;
+	font-weight: 400;
+}
+#resume.slide ul li{
+	margin: 10px 0;
+}
+#resume.slide ul {
+	margin: 30px 0;
+}
+#test{
+	background-color:#bde2df;
+	color:#ffffff;
+	text-align:center;
+	font-size: 2em;
+	font-weight: 400;
+}
+
+
+
+
+/* Slide 4 */
+
+#contact-me{
+
+	background-color:#4f4f4f;
+	color:#fff;
+}
+#contact-me h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+
+	color:#ffffff;
+	font-weight: 700;
+}
+#contact-me h2 {
+	font-size: 2em;
+	color: #ffffff;
+
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+
+
+
+/* Slide 5 */
+
+#blog{
+
+	background-color:#bcc5cd;
+	color:#333;
+}
+#blog h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+
+	color:#333;
+	font-weight: 700;
+}
+#blog h2 {
+	font-size: 2em;
+	color: #333;
+
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+#blog a{
+	color: #fff;
+}
+
+#blog a:hover{
+	color: #4f4f4f;
+}
+
+/* Slide 6 */
+
+#slide6{
+	background-color:#d164a4;
+	color:#ffffff;
+}
+#slide6 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+
+	color:#ffffff;
+	font-weight: 700;
+}
+#slide6 h2 {
+	font-size: 2em;
+	color: #ffffff;
+
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+
+#logo {
+	width: 100%;
+	text-align: center;
+}
+
+#nav {
+	width:100%;
+	text-align:center;
+	margin:10px 0;
+}
+
+.navigation{
+	width: 100%;
+	float: center;
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+
+.navigation li{
+	float: left;
+	width:20%;
+	padding:0;
+}
+.menu{
+	top:-5px;
+}
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	position: relative;
+	padding:150px 0;
+}
+
+#decorative {
+	display:none;
+}
+
+#content {
+	text-align:center;
+	width:100%;
+}
+
+#slide1 h1 {
+	line-height: 1em;
+}
+#slide1 h2 {
+	line-height: 1em;
+}
+#slide2 h1 {
+	line-height: 1em;
+}
+#slide2 h2 {
+	line-height: 1em;
+}
+#slide3 h1 {
+	line-height: 1em;
+}
+#slide3 h2 {
+	line-height: 1em;
+}
+#slide4 h1 {
+	line-height: 1em;
+}
+#slide4 h2 {
+	line-height: 1em;
+}
+#slide1 h1, #slide2 h1, #slide3 h1, #slide4 h1, #slide5 h1, #slide6 h1 {
+	line-height: 1em;
+}
+#slide1 h2, #slide2 h2, #slide3 h2, #slide4 h2, #slide5 h2, #slide6 h2 {
+	line-height: 1em;
+}
+}
+
+
+
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+ul.portfolio li {
+  float: none !important;
+}
+#logo {
+	width: 100%;
+	text-align: center;
+}
+#resume ul li {
+  margin: 2em;
+}
+#nav, .menu {
+	width:100%;
+	margin:5px 0;
+}
+
+.navigation{
+	width: 100%;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+
+.navigation li{
+	float: left;
+	width:25%;
+}
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	position: relative;
+	padding:150px 0;
+}
+
+
+#slide1 h1, #slide2 h1, #slide3 h1, #slide4 h1, #slide5 h1, #slide6 h1 {
+	line-height: 1em;
+}
+#slide1 h2, #slide2 h2, #slide3 h2, #slide4 h2, #slide5 h2, #slide6 h2 {
+	line-height: 1em;
+}
+#slide1 h3, #slide2 h3, #slide3 h3, #slide4 h3, #slide5 h3, #slide6 h3{
+	line-height: 1em;
+}
+
+#slide1 h2 {
+	line-height: 1em;
+}
+#slide2 h1 {
+	line-height: 1em;
+}
+#slide2 h2 {
+	line-height: 1em;
+}
+#slide3 h1 {
+	line-height: 1em;
+}
+#slide3 h2 {
+	line-height: 1em;
+}
+#slide4 h1 {
+	line-height: 1em;
+}
+#slide4 h2 {
+	line-height: 1em;
+}
+.column-left{
+	float: none !important;
+	width: 100% !important;
+}
+.column-right{
+	float: none !important;
+	width: 100% !important;
+}
+
+}
+input[type=submit]:hover, input[type=submit]:focus{
+box-shadow: 0 8px #f1f1f1;
+	top: -2px;
+	border:0;
+}
+input[type=submit] {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	/*margin: 15px 30px;*/
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	background: #eca2cf;
+	color: #fff;
+	box-shadow: 0 6px #b14185;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+	outline: none;
+	position: relative;
+		border-radius: 0 0 5px 5px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type=submit]:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+
+
+.resume-subtitle{
+font-weight:bold;
+text-transform:uppercase;
+		line-height: 1em;
+}
+
+.education-subtitle{
+	display:block;
+}
+
+.important{
+	color:#ce2d8b;
+}
+
+h3{
+	font-weight:400;
+	font:18px 'Roboto',sans-serif;
+	text-align:center;
+}
+h1{
+	font-weight:600;
+	font:20px 'Roboto Condensed',sans-serif;
+}
+input,textarea{
+	padding:10px;
+	border:1px solid #ccc;
+	outline:0;
+	width:100%;
+
+}
+input:hover, textarea:hover, input:focus, textarea:focus{
+	border:1px solid #515151;
+}
+.subtitle{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.column-left{
+	float: left;
+	width: 50%;
+}
+.column-right{
+	float: right;
+	width: 50%;
+}
+
+.intro-message{
+	margin: 0 auto 40px;
+  width:70%;
+}
+ul.portfolio{
+  width:1040px;
+  margin:0 auto;
+}
+ul.portfolio li{
+  position: relative;
+
+}
+
+.overlay {
+  background: #000;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: none;
+  opacity: 0.7;
+  max-height:320px;
+}
+
+.description{
+  display: none;
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  top:50%;
+
+}
+
+.thumb-info{
+  position: absolute;
+  top:0;
+  z-index: 10;
+  display: none;
+padding-left: 40px;
+}
+
+
+.thumb-info a img{
+  display:inline-block;
+  float:left;
+  margin: 0 10px;
+}

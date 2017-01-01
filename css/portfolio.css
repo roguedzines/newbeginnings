@@ -1,0 +1,17 @@
+ul.portfolio{
+	margin:0 auto;
+	padding:0;
+	list-style:none;
+}
+
+
+ul.portfolio li{
+	float:left;
+	display:block;
+	margin:0.8em 0.3em;
+}
+
+span.thumb-description-link{
+	display:block;
+	z-index:30;
+}
