@@ -1,8 +1,45 @@
 /* Global */
+<<<<<<< staging
 $bodycolor :#ccc;
 $primary-font-color:#333;
 
 
+=======
+// Colors
+$bodycolor :#ccc;
+$primary-font-color:#333;
+
+// Mixins
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.box { @include border-radius(10px); }
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  @extend .message;
+  border-color: green;
+}
+
+.error {
+  @extend .message;
+  border-color: red;
+}
+
+.warning {
+  @extend .message;
+  border-color: yellow;
+}
+>>>>>>> init
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
