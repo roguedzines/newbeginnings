@@ -1,9 +1,23 @@
-/* Global */
-// Colors
-$bodycolor :#ccc;
+/* Global Vars
+*
+* Colors
+*/
+
+$background-main :#ccc;
 $primary-font-color:#333;
 
-// Mixins
+/*
+*
+Mixins
+-------
+*
+*/
+
+@mixin square($size, $color) {
+  width: $size;
+  height: $size;
+  background-color: $color;
+}
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -11,6 +25,26 @@ $primary-font-color:#333;
       -ms-border-radius: $radius;
           border-radius: $radius;
 }
+.dialog-button {
+  box-sizing: border-box;
+  color: #ffffff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  padding: 12px 40px;
+  cursor: pointer;
+}
+
+.confirm {
+  @extend .dialog-button;
+  background-color: #87bae1;
+  float: left;
+}
+
+.cancel {
+  @extend .dialog-button;
+  background-color: #e4749e;
+  float: right;
+}
+/*------------------------------------------*/
 
 .box { @include border-radius(10px); }
 .message {
@@ -38,7 +72,7 @@ body {
 	font-weight: 400;
 	font-size: 1em;
 	color: $primary-font-color;
-	background-color:$bodycolor;
+	background:$background-main;
 }
 img {
 	max-width: 100%;
